@@ -1,29 +1,161 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>BIODATA NIKITA</title>
-</head>
-<link rel="stylesheet" href="./css/style.css" />
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/IMG_20180610_220605.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
 <body>
 
-	<h1 class="satu"><strong>BIODATA NIKITA</strong></h1>
-	<p class="ttl"><strong>Nama</strong> : Nikita Mutiara</p>
-	<p class="ttl"><strong>TTL</strong>  : Jakarta,04 November2002</p>
-	
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">RECOMMEND</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">Fin</a>
+    </div>
+  </div>
+</div>
 
-	<p class="p1"><strong>Deskripsi</strong> : Nama saya Nikita Mutiara sering dipanggil Nikita atau Nik, ya kalo dipanggil sayang juga boleh :v. Sekarang saya tinggal di kosan namanya Dormitory Kencana di Jln. Padi. Saya sekarang sekolah di SMK-SMAK BOGOR. Saya anak ke-3 dari 3 bersaudara</p>
-<p class="p1">Cita-cita saya sekarang ini adalah nonton konser sendiri. Saya suka grup Twice dan Iz*one </p>
-<p class="p1">Saya berharap tahun ini saya dapat nonton konser.</p>
-<p class="p1">Saya mempunyai 2 kakak laki-laki, Kakak saya yang pertama kuliah di Bandung, semetara yang kedua kuliah di Jakarta</p>
-	<p class="p1">Riwayat sekolah saya, SD saya di SDKN Anglo yang terdapat di dekat rumah, setelah itu saya sekolah di SMPN 99 Jakarta dan sekarang saya sekolah si SMK-SMAK Bogor </p>
-	<p class="p1">Gambar pertama, itu ada gif, sebenernya mau tutorial cara make hoodie zipper. Gambar kedua ada gambar bersama idola, itu foto bersama Kim Minjoo dari IZ*ONE karena saya suka grup itu dan ga ada foto yang lebih cocok lagi untuk di edit :'v. Gambar ketiga ada Gambar hobi, hobi saya membaca, tapi baca komik :v.</p>
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Helow gaes~~</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">my<br>Blog</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">26 Feb 2019</span>
+  </div>
+</header>
 
-</body>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
 
-	
-	
-<img class="img1" src="img/GIF-Nikita-XI.6.gif"</a>
-<img src="img/Nikita22.png"</a>
-<img src="img/NIK HOBBY.png"</a>
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>My name is Nikita Mutiara, I was born in Jakarta on November 4th 2002. I study at SMAKBo, and i live in boarding house. My idol is Iz*one, and my hobbies are listening music, reading books and comics</p>
+    <p>I have two brothers,. Both of them already college. My eldest brother in his second year in Telkom University Bandung and the elder one is in his first year in Trisakti transportation institute.</p>
+    <img src="img/1528297487177.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Date:</strong> 05/06/18.</p>
+    <p><strong>Event:</strong> Bukber with X-9</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RECOMMEND</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Songs');" id="myLink">
+        <div class="w3-col s6 tablink">Songs</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Books');">
+        <div class="w3-col s6 tablink">Books</div>
+      </a>
+    </div>
+
+    <div id="Songs" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Gokigen Sayonara</h5>
+      <p class="w3-text-grey">Japanese song that sung by Izone, tells about separation with good mood or happy atmosphere, part of lyrics: "... Goodbye with smile. Thankyou for all memories, thankyou. Somehow happy."</p><br>
+    
+      <h5>Congratulation</h5>
+      <p class="w3-text-grey">This song has 2 versions, English and Korean that sung by Day6 tells about congratulate their ex with sarcasm, part of lyrics: "Congratulation you just took away our memories so far, they're gone just like you are, now all i have is me and it's getting to hard"</p><br>
+    
+      <h5>You Belong with Me</h5>
+      <p class="w3-text-grey">Pop-Country song by Taylor Swift, tells about a girl who understand and on her crush's side more than his girlfiend, part of lyrics: "I'm the one who make you laugh ... And I know your favorites songs An you tell me about your dreams"</p><br>
+    
+      <h5>Rahasia Cintaku</h5>
+      <p class="w3-text-grey">Indonesian song that sung by Kahitna, tells about someone who secretly love their crush, but sometimes they confused wether they love or just being sensitive, part of lyrics: "My love is only for you if you relize that, if your love is not me, let this love will become the secret of my herat"</p><br>
+    
+      <h5>One In a Million</h5>
+      <p class="w3-text-grey">Korean song that sung by Twice, tells about motivate to the listener that they're special, part of lyrics: " You're the only one in the world, You're masterpiece, You're perfect the way you are"</p>
+    </div>
+
+    <div id="Books" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Girls in the Dark</h5>
+      <p class="w3-text-grey">Written by Akiyoshi Rikako. Tells about the six members of the literature club revealed their opini for the mistery from the death of the president club in the form of literature that they made</p><br>
+    
+      <h5>Holy Mother</h5>
+      <p class="w3-text-grey">Written by Akiyoshi Rikako. Tells about how did a mother protect their child from the environment that is vulnerable</p><br>
+    
+      <h5>The Curiousity House: The Shrunken Head</h5>
+      <p class="w3-text-grey">Tells about journey of four kids from a museum to found it's lost asset, The Shrunken head</p><br>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Fin</span></h5>
+    <p><span class="w3-tag">FYI!</span> If you want to recommend me some songs or books, let me know it~~.</p>
+    <p><strong>Comment!</strong> please let me know your opinion about my Blog by send me a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
 </body>
 </html>
+
